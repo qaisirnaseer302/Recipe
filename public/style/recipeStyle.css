@@ -1,0 +1,82 @@
+.recipe_features{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+.feature{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 4px;
+    padding: 8px;
+    column-gap: 6px;
+}
+.feature #icon{
+    font-size: 24px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: rgba(242, 157, 0,0.4);
+    color: white;
+    padding: 4px;
+}
+#feature_title{
+    font-size:14px;
+    color: rgb(75, 74, 74);
+    margin: 0;
+}
+#feature_value{
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    margin: 0;
+}
+
+.recipe_info{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 10px;
+    column-gap: 30px;
+}
+#recipe_description{
+    grid-area: "description";
+    padding:4px;
+    text-wrap: wrap;
+}
+#chef_image{
+    background-image: url("../images//chef_community.jpg");
+    background-size: cover;
+    background-position: center;
+    border: 1px solid transparent;
+    border-radius: 20px;
+}
+#chef_name{
+    color: balck;
+    font-weight: 500;
+    text-align:end;
+}
+#tag_dld{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#tags{
+    grid-area: "tags";
+}
+#tag_title{
+    color: rgb(52, 51, 51);
+    margin-bottom: 0;
+}
+#actual_tags{
+    color: orange;
+    margin-top: 2px;
+}
+#download a{
+    text-decoration: none;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: black;
+    padding: 8px;
+}

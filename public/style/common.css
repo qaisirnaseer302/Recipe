@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(255, 255, 255);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    margin: 7px;
+    padding: 4px;
+}
+.logo_title{
+    color: orange;
+}
+.nav_bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_pages a{
+    color: rgb(56, 54, 54);
+    text-decoration: none;
+    margin: 4px;
+}
+.nav_pages a:hover{
+    color: orange;
+    font-size: 20px;
+}
+#search_box{
+    border: none;
+    padding:6px;
+    border-radius: 10px;
+    background-color: rgba(116, 140, 155,0.2);
+}
+#search{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 4px;
+}
+#search label{
+    border: 1px solid rgb(189, 188, 188);
+    background-color: white;
+    padding: 4px;
+    border-radius: 12px;
+}
+.search_profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search_profile a{
+    color:white;
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: black;
+    padding: 3px;
+}
+.hero img{
+    width: 100%;
+}

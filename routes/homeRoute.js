@@ -1,8 +1,6 @@
 const express=require('express');
 const route=express.Router();
-const homeController=require('../controllers/homeController')
+const {homeController,recipeController}=require('../controllers/homeController')
 route.get('/',homeController);
-// route.get('/google',google);
-
-
+route.get('/recipeDetails',recipeController);
 module.exports=route;
