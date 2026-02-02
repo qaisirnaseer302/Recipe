@@ -1,3 +1,6 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .recipe_features{
     display: flex;
     justify-content: space-evenly;
@@ -42,7 +45,6 @@
 #recipe_description{
     grid-area: "description";
     padding:4px;
-    text-wrap: wrap;
 }
 #chef_image{
     background-image: url("../images//chef_community.jpg");
@@ -79,4 +81,62 @@
     border-radius: 20px;
     background-color: black;
     padding: 8px;
+}
+.ingredients_and_nutritions_container{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 20px;
+}
+.Ingredients_container{
+    background-color: white;
+    box-shadow: 2px 2px 3px 3px  rgba(116, 140, 155,0.1);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 8px;
+}
+.Ingredients_container h3,.nutrition_info h3{
+    margin-left:40px;
+    margin-bottom: 0px;
+}
+.ingredients_info{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    column-gap: 30px;
+    margin: 0px;
+    color: rgb(33, 33, 33);
+}
+.nutrition_info{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    background-color: rgba(116, 140, 155,0.1);
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.cooking_instructions{
+    display: flex;
+    flex-direction: column;
+}
+.Instruction{
+    display: grid;
+    grid-template-columns: 1fr 12fr;
+    column-gap: 4px;
+    background-color: rgba(116, 140, 155,0.1);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 8px;
+    margin: 8px;
+}
+.inst_number{
+    padding:4px;
+    color: orange;
+    font-size: 22px;
+    width: fit-content;
+    font-weight: bold;
+}
+
+.recent_recipes{
+    display: flex;
+    margin: 20px 0px;
 }
