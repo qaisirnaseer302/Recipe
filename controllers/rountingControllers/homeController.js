@@ -1,6 +1,5 @@
-const views=require('../path/paths')
-
-const homeController=(req,res)=>{
+const views=require('../../path/paths')
+const homeController=(req,res)=>{;
     res.sendFile(`${views}/index.html`)
 }
 const recipeController=(req,res)=>{
