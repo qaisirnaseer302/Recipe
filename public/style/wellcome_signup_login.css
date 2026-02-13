@@ -1,0 +1,130 @@
+:root {
+    --bg-color:rgba(116, 140, 155,0.1);      /* Warm beige */
+    --primary-green: #1B5E20; /* Deep forest green */
+    --text-color: #1B5E20;
+    --social-bg: #FFF9E1;     /* Light cream for social buttons */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+/* Common Screen Container */
+.screen {
+    margin-top: 20px;
+    background-color: var(--bg-color);
+    width: 60vw;
+    height: fit-content;
+    border-radius: 20px;
+    padding: 40px 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+#welcome-screen img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;  
+}
+.logo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3rem;
+    color: #333;
+}
+
+.title {
+    color: var(--primary-green);
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+}
+
+.tagline {
+    color: #444;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+/* Form Styling */
+.auth-form {
+    width: 100%;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.input-group input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #999;
+    background: transparent;
+    padding: 8px 0;
+    outline: none;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 12px 0;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.btn-social {
+    background-color: var(--social-bg);
+    color: #666;
+    border: none;
+    padding: 10px;
+    width: 90%;
+    border-radius: 10px;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.divider {
+    font-size: 0.8rem;
+    color: #777;
+    margin: 20px 0;
+}
+
+.footer-text {
+    font-size: 0.8rem;
+    margin-top: 20px;
+    font-weight: bold;
+}

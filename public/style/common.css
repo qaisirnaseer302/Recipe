@@ -3,7 +3,7 @@ body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .container{
-    margin: 7px;
+    margin: 3px;
     padding: 4px;
 }
 
@@ -13,6 +13,7 @@ body{
     color: orange;
 }
 .nav_bar{
+    padding: 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
