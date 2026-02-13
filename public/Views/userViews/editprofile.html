@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit Profile</title>
+<link rel="stylesheet" href="../../style/editProfile.css">
+<link rel="stylesheet" href="../../style/common.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="profile-card">
+<h1 id="editProfile">Edit Profile</h1>
+    <div class="form-grid">
+        <div>
+            <div class="label-row">
+                <label for="firstname">First Name</label>
+            </div>
+            <input type="text" class="input-field" placeholder="Jane" id="firstname">
+        </div>
+
+        <!-- Last Name -->
+        <div>
+            <div class="label-row">
+                <label for="lastname">Last Name</label>
+            </div>
+            <input type="text" class="input-field" placeholder="Coop" id="lastname">
+        </div>
+
+        <!-- Email -->
+        <div>
+            <div class="label-row">
+                <label for="email">Email</label>
+                <span>Verified</span>
+            </div>
+            <input type="email" class="input-field" placeholder="jane234@example.com" id="email">
+        </div>
+
+        <!-- Phone -->
+        <div>
+            <div class="label-row">
+                <label for="phone-number">Phone Number</label>
+                <span>✔ Verified</span>
+            </div>
+            <input type="text" class="input-field" placeholder="(209) 555-0104" id="phone-number">
+        </div>
+
+        <!-- DOB -->
+        <div>
+            <div class="label-row">
+                <label for="dateofbirth">Date of Birth</label>
+            </div>
+            <input type="text" class="input-field" placeholder="17 nov, 1996" id="dateofbirth">
+        </div>
+
+        <!-- Country -->
+        <div>
+            <div class="label-row">
+                <label for="country">Country</label>
+            </div> 
+            <select class="input-field" id="country">
+                <option>Bangladesh</option>
+                <option>Pakistan</option>
+                <option>India</option>
+                <option>USA</option>
+            </select>
+        </div>
+        <div>
+            <div class="label-row">
+                <label for="city">City</label>
+            </div>
+            <input type="text" class="input-field" placeholder="Dhaka" id="city">
+        </div>
+        <div>
+            <div class="label-row">
+                <label for="postal-code">Postal Code</label>
+            </div>
+            <input type="text" class="input-field" placeholder="1207" id="postal-code">
+        </div>
+        <!-- Bio -->
+        <div class="full-width">
+            <div class="label-row">
+                <label for="bio">Bio</label>
+            </div>
+            <textarea class="input-field" id="bio" rows="4">
+Passionate about connecting businesses with the goodness of nature! 🌱 I'm on a mission to make organic food, medicine, fruits, and FMCG products easily accessible to B2B partners. 🌍 Health and sustainability drive my business ethos. ✨ I love working closely with businesses that share our values. Let's grow together! 🌿
+            </textarea>
+        </div>
+         <a href="profile" class="btn-save">Save Changes</a>
+    </div>
+</div>
+
+</body>
+</html>

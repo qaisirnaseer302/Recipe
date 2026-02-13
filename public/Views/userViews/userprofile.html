@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Screen</title>
+    <link rel="stylesheet" href="../../style/userProfile.css">
+    <link rel="stylesheet" href="../../style/common.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+      <div>
+        <nav class="nav_bar">
+        <div class="logo">
+          <h3>FLA<span class="logo_title">VORIZ</span></h3>
+        </div>
+        <div class="nav_pages">
+          <a href="home">HOME</a>
+          <a href="#">ABOUT</a>
+          <a href="#">RECIPES</a>
+          <a href="#">CONTACT</a>
+        </div>
+        <div class="search_profile">
+          <div id="search">
+            <input type="search" placeholder="search" id="search_box" />
+            <label for="search_box">🔍</label>
+          </div>
+          <a href="profile">👤</a>
+        </div>
+      </nav>
+      </div>
+<div class="container">
+    <div class="card profile-header">
+        <div class="avatar-container">
+            <img src="../../images/user-profile.png" alt="Profile Picture" class="avatar">
+            <div class="camera-icon">📷</div>
+        </div>
+        <div class="header-info">
+            <h1>Qaisir Naseer</h1>
+            <p>Admin</p>
+            <p class="location">Narowal, Pakistan</p>
+        </div>
+         <a href="editprofile" class="btn-edit primary">Edit ✎</a>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h3>Personal Information</h3>
+
+        </div>
+        <div class="grid">
+            <div class="info-group">
+                <label>First Name</label>
+                <p>Qaisir</p>
+            </div>
+            <div class="info-group">
+                <label>Last Name</label>
+                <p>Naseer</p>
+            </div>
+            <div class="info-group">
+                <label>Date of Birth</label>
+                <p>03-06-2004</p>
+            </div>
+            <div class="info-group">
+                <label>Email Address</label>
+                <p>qaisirnaseer0@example.com</p>
+            </div>
+            <div class="info-group">
+                <label>Phone Number</label>
+                <p>(+92) 300 1234-5678</p>
+            </div>
+            <div class="info-group">
+                <label>User Role</label>
+                <p>Admin</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <h3>Address</h3>
+        </div>
+        <div class="grid">
+            <div class="info-group">
+                <label>Country</label>
+                <p>Pakistan</p>
+            </div>
+            <div class="info-group">
+                <label>City</label>
+                <p>Narowal</p>
+            </div>
+            <div class="info-group">
+                <label>Postal Code</label>
+                <p>E12345</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
