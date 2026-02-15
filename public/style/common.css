@@ -61,6 +61,12 @@ body{
 .hero img{
     width: 100%;
 }
+.recipes_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
 /* recipe card*/
 .recipe{
     background-color:rgba(116, 140, 155,0.1);
