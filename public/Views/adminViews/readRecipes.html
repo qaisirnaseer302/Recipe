@@ -3,9 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../style/readRecipes.css">
+    <link rel="stylesheet" href="../../style/adminCommon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Read Recipes</title>
 </head>
 <body>
-    <h1>read recipes</h1>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <i class="fa-solid fa-bolt"></i> FLAVORIZ
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="dashboard"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                <li><a href="add"><i class="fa-solid fa-plus"></i> Add Recipe <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                <li><a href="delete"><i class="fa-solid fa-trash-can"></i> Delete Recipe <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                <li><a href="update"><i class="fa-solid fa-pen-to-square"></i> Update Recipe <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                <li><a href="read"><i class="fa-solid fa-list"></i> All Recipes  <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                <li><a href="logout"><i class="fa-solid fa-sign-out"></i> Logout <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+            </ul>
+        </aside>
+
+        <main class="content-area">
+            <header class="top-nav">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="type to search">
+                </div>
+                <div class="top-icons">
+                    <i class="fa-brands fa-github"></i>
+                    <div class="notification">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </header>
+   <div class="recipe-list">
+     <div class="recipe-card">
+        <h2>American Cusine</h2>
+        <p><span>Recipe Description: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>    
+        <p><span>Category:</span> Main Course</p>
+        <p><span>Prep Time:</span> 30 mins</p>
+        <p><span>Cook Time:</span> 45 mins</p>
+        <p><span>Servings:</span> 4</p>
+        <p><span>Author:</span> John Doe</p>
+        <p><span>Created At:</span> 2024-06-01</p>
+        <p><span>Updated At:</span> 2024-06-10</p>
+        <button type="submit" >Edit Recipe</button>
+        <button type="submit">Delete Recipe</button>
+    </div>
+        <div class="recipe-card">
+            <h2>Italian Cuisine</h2>
+            <p><span>Recipe Description: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+            <p><span>Category:</span> Main Course</p>
+            <p><span>Prep Time:</span> 30 mins</p>
+            <p><span>Cook Time:</span> 45 mins</p>
+            <p><span>Servings:</span> 4</p>
+            <p><span>Author:</span> John Doe</p>
+            <p><span>Created At:</span> 2024-06-01</p>
+            <p><span>Updated At:</span>  2024-06-10</p>
+            <button type="submit" >Edit Recipe</button>
+            <button type="submit">Delete Recipe</button>
+        </div>
+            <div class="recipe-card">
+                <h2>Indian Cuisine</h2>
+                <p><span>Recipe Description: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                <p><span>Category:</span> Main Course</p>
+                <p><span>Prep Time:</span> 30 mins</p>
+                <p><span>Cook Time:</span> 45 mins</p>
+                <p><span>Servings:</span> 4</p>
+                <p><span>Author:</span> John Doe</p>
+                <p><span>Created At:</span> 2024-06-01</p>
+                <p><span>Updated At:</span> 2024-06-10</p>
+                <button type="submit" >Edit Recipe</button>
+                <button type="submit">Delete Recipe</button>
+            </div>
+            <div class="recipe-card">
+                <h2>French Cuisine</h2>
+                <p><span>Recipe Description: </span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+                <p><span>Category:</span> Main Course</p>
+                <p><span>Prep Time:</span> 30 mins</p>
+                <p><span>Cook Time:</span> 45 mins</p>
+                <p><span>Servings:</span> 4</p>
+                <p><span>Author:</span> John Doe</p>
+                <p><span>Created At:</span> 2024-06-01</p>
+                <p><span>Updated At:</span> 2024-06-10</p>
+                <button type="submit" >Edit Recipe</button>
+                <button type="submit">Delete Recipe</button>
+            </div>
+   </div>
+   </div>
 </body>
 </html>

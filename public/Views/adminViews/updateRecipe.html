@@ -3,10 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../style/addRecipe.css">
+    <link rel="stylesheet" href="../../style/adminCommon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Update Recipe</title>
 </head>
 <body>
-    <h1>update recipes
-    </h1>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <i class="fa-solid fa-bolt"></i> FLAVORIZ
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="dashboard"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                <li><a href="add"><i class="fa-solid fa-plus"></i> Add Recipe <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                <li><a href="delete"><i class="fa-solid fa-trash-can"></i> Delete Recipe <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                <li><a href="update"><i class="fa-solid fa-pen-to-square"></i> Update Recipe <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                <li><a href="read"><i class="fa-solid fa-list"></i> All Recipes  <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                <li><a href="logout"><i class="fa-solid fa-sign-out"></i> Logout <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+            </ul>
+        </aside>
+
+        <main class="content-area">
+            <header class="top-nav">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="type to search">
+                </div>
+                <div class="top-icons">
+                    <i class="fa-brands fa-github"></i>
+                    <div class="notification">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </header>
+            <div ></div>
+            <div class="widget form-container">
+<div class="widget form-container">
+        <div class="widget-header">
+            <i class="fa-solid fa-plus"></i> Update Recipe
+        </div>
+        <div class="widget-body">
+            <form action="#" class="recipe-form">
+                <div class="form-group">
+                    <label for="recipe-title">Recipe Name</label>
+                    <input type="text" id="recipe-title" placeholder="e.g. Spicy Basil Pasta" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                            <option value="dessert">Dessert</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="prep-time">Prep Time (mins)</label>
+                        <input type="number" id="prep-time" placeholder="30">
+                    </div>
+                </div>
+                 <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="6" placeholder="Describe the recipe..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="ingredients">Ingredients</label>
+                    <textarea id="ingredients" rows="4" placeholder="List ingredients separated by commas..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="instructions">Cooking Instructions</label>
+                    <textarea id="instructions" rows="6" placeholder="Step 1: Boil water..."></textarea>
+                </div>
+                 <div class="form-group">
+                        <label for="author">Author</label>
+                        <input type="text" id="author" placeholder="Author's name">
+                    </div>
+
+                <div class="form-group">
+                    <label for="recipe-image">Recipe Cover Image</label>
+                    <input type="file" id="recipe-image" class="file-input">
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary" >Update Recipe</button>
+                    <button type="reset" class="btn btn-secondary">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+        </div>
+        </main>
+        
+    </div>
 </body>
 </html>

@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spur Admin Dashboard</title>
+    <link rel="stylesheet" href="../../style/adminCommon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <h1>Admin Home</h1>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <i class="fa-solid fa-bolt"></i> FLAVORIZ
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="dashboard"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                <li><a href="add"><i class="fa-solid fa-plus"></i> Add Recipe <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                <li><a href="delete"><i class="fa-solid fa-trash-can"></i> Delete Recipe <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                <li><a href="update"><i class="fa-solid fa-pen-to-square"></i> Update Recipe <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                <li><a href="read"><i class="fa-solid fa-list"></i> All Recipes  <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                <li><a href="logout"><i class="fa-solid fa-sign-out"></i> Logout <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+            </ul>
+        </aside>
+
+        <main class="content-area">
+            <header class="top-nav">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="type to search">
+                </div>
+                <div class="top-icons">
+                    <i class="fa-brands fa-github">github</i>
+                    <div class="icosn-wrapper">
+                        <i class="fa-solid fa-bell">Notify</i>
+                    </div>
+                    <a href="dashboard"><i class="fa-solid fa-user"></i></a>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <div class="stat-card blue">
+                    <div class="stat-content">
+                        <i class="fa-solid fa-user icon-bg"></i>
+                        <span>Sign ups</span>
+                        <h2>114</h2>
+                        <p>+25% from last month</p>
+                    </div>
+                </div>
+                <div class="stat-card green">
+                    <div class="stat-content">
+                        <i class="fa-solid fa-utensils icon-bg"></i>
+                        <span>Total Recipes</span>
+                        <h2>120</h2>
+                        <p>+17.5% from last month</p>
+                    </div>
+                    
+                </div>
+                <div class="stat-card red">
+                    <div class="stat-content">
+                        <i class="fa-solid fa-eye icon-bg"></i>
+                        <span>Views</span>
+                        <h2>5000</h2>
+                        <p>+17.5% from last month</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="widgets-grid">
+                <div class="widget">
+                    <div class="widget-header"><i class="fa-solid fa-chart-simple"></i> Bar Chart</div>
+                    <div class="widget-body chart-placeholder">
+                                            </div>
+                </div>
+                <div class="widget">
+                    <div class="widget-header"><i class="fa-solid fa-bell"></i> Notifications</div>
+                    <div class="widget-body">
+                        <ul class="notif-lis    t">
+                            <li><i class="fa-solid fa-cloud"></i> New comment <span>21 days ago</span></li>
+                            <li><i class="fa-solid fa-cloud"></i> New comment <span>21 days ago</span></li>
+                            <li><i class="fa-solid fa-cloud"></i> New comment <span>21 days ago</span></li>
+                        </ul>
+                        <a href="#" class="show-all">Show all</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>

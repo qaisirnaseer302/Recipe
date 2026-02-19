@@ -3,9 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../../style/addRecipe.css">
+     <link rel="stylesheet" href="../../style/adminCommon.css">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Add Recipe</title>
 </head>
 <body>
-    <h1>delete</h1>
+<div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <i class="fa-solid fa-bolt"></i> FLAVORIZ
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="dashboard"><i class="fa-solid fa-house"></i> Dashboard</a></li>
+                <li><a href="add"><i class="fa-solid fa-plus"></i> Add Recipe <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                <li><a href="delete"><i class="fa-solid fa-trash-can"></i> Delete Recipe <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                <li><a href="update"><i class="fa-solid fa-pen-to-square"></i> Update Recipe <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                <li><a href="read"><i class="fa-solid fa-list"></i> All Recipes  <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+                <li><a href="logout"><i class="fa-solid fa-sign-out"></i> Logout <i class="fa-solid fa-chevron-right arrow"></i></a></li>
+            </ul>
+        </aside>
+
+        <main class="content-area">
+            <header class="top-nav">
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="type to search">
+                </div>
+                <div class="top-icons">
+                    <i class="fa-brands fa-github"></i>
+                    <div class="notification">
+                        <i class="fa-solid fa-bell"></i>
+                    </div>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </header>
+    <div class="main-content-padding">
+    <div class="widget form-container">
+        <div class="widget-header">
+            <i class="fa-solid fa-trash-can"></i> Delete Recipe
+        </div>
+        <div class="widget-body">
+            <form action="#" class="recipe-form">
+                <div class="form-group">
+                    <label for="recipe-title">Recipe Name</label>
+                    <input type="text" id="recipe-title" placeholder="e.g. Spicy Basil Pasta" required>
+                </div>
+                <div class="form-group">
+                    <label for="recipe-id">Recipe Id</label>
+                    <input type="text" id="recipe-id" placeholder="e.g. 1234567890" required>
+                </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-danger">Delete Recipe</button>
+                        <button type="reset" class="btn btn-secondary">Cancel</button>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
 </body>
 </html>
