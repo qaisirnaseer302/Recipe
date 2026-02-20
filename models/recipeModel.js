@@ -33,7 +33,7 @@ const recipeSchema=new mongoose.Schema({
     difficulty:{
         type:String,
     },
-    cuisine:{
+    category:{
         type:String,
         trim:true,
     },
@@ -43,8 +43,9 @@ const recipeSchema=new mongoose.Schema({
     tags:{
         type:Array,
     },
-    rating:{
-        type:Number,
+    author:{
+        type:String,
+        default:"admin"
     },
     mealType:{
         type:Array
