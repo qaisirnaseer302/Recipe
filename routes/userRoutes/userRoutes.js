@@ -1,7 +1,7 @@
 const express=require('express');
 const userRouter=express.Router();
 
-const {homeController,recipeController,userProofileController,signUpController,logInController,editProfileController,allRecipesController}=require('../controllers/rountingControllers/userControllers');
+const {homeController,recipeController,userProofileController,signUpController,logInController,editProfileController,allRecipesController}=require('../../controllers/rountingControllers/userControllers');
 
 userRouter.get('/home',homeController);
 userRouter.get('/login',logInController);
